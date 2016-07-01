@@ -1,0 +1,675 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>小米后台</title>
+<link href="bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+<script type="text/javascript" src="bootstrap/js/jquery-1.11.3.min.js"></script>
+<script type="text/javascript" src="bootstrap/js/bootstrap.min.js"></script>
+<link href="bootstrap/defind_css/regard.css" rel="stylesheet" type="text/css">
+<link href="bootstrap/defind_css/info.css" rel="stylesheet" type="text/css">
+<link href="bootstrap/defind_css/serve.css" rel="stylesheet" type="text/css">
+<link href="bootstrap/defind_css/safe_back.css" rel="stylesheet" type="text/css">
+<style>
+.tab-content {
+	width: 900px;
+	margin-left: 180px;
+	height: auto;
+}
+.mainnav {
+	width: 650px;
+	margin-left: 0px;
+	width: 650px;
+	padding-left: 10px;
+}
+.right {
+	padding-left: 420px;
+	text-decoration: none;
+	color: #ABB6C9;
+	font-weight: bold;
+	padding-top: 20px;
+}
+.left {
+	padding-top: 20px;
+	padding-left: 180px;
+}
+.theader {
+	margin-top: 40px;
+}
+.content {
+	background-color: #F9F9F9;
+}
+.n-account-area-box {
+	display: block;
+}
+.n-account-area {
+	overflow: hidden;
+	position: absolute;
+	right: 250px;
+	top: 110px;
+}
+* {
+	box-sizing: border-box;
+}
+.fl-l {
+	float: left;
+}
+.na-info {
+	width: 120px;
+	text-align: right;
+	padding-top: 16px;
+	margin-right: 10px;
+	float: left;
+	line-height: 0px;
+	font-size: 12px;
+	font-family: Verdana, Geneva, sans-serif;
+}
+.na-name {
+	color: #333;
+	font-weight: bold;
+	font-size: 14px;
+	line-height: 1.5;
+	overflow: hidden;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+}
+.na-num {
+	position: relative;
+	z-index: 10;
+}
+.na-img-area {
+	width: 100px;
+	height: 100px;
+	border: 2px solid #E3E3E3;
+	border-radius: 50%;
+	padding: 4px;
+	background: #FFF none repeat scroll 0% 0%;
+	position: relative;
+	z-index: 4;
+	cursor: pointer;
+}
+.na-img-bg-area {
+	background: transparent url(%E5%B0%8F%E7%B1%B3%E5%95%86%E5%9F%8E%E5%9B%BE%E7%89%87/picture.png) no-repeat scroll 0px 0px;
+	width: 100%;
+	height: 100%;
+	border-radius: 50%;
+	overflow: hidden;
+	left: 400px;
+}
+.regard_box .reg-box-left dt {
+	float: left;
+	width: 80px;
+	margin-right: 10px;
+	margin-top: 20px;
+	left: 20px;
+	padding-top: 20px;
+}
+.regard_box .reg-box-left dd {
+	float: right;
+	width: 80px;
+	margin-right: 10px;
+	margin-top: 20px;
+	left: 20px;
+	padding-top: 20px;
+}
+.update {
+	width: 450px;
+	height: auto;
+	background-color: #FFF;
+	border-color: #FFF;
+	margin-left: 400px;
+	margin-top: 200px;
+	border-radius: 5px;
+	border: 1px solid #CCC;
+}
+.update-h {
+	font-weight: bold;
+	color: #000;
+	margin-top: 10px;
+}
+.sp-title {
+	color: #CCC;
+	text-align: center;
+}
+.pwd {
+	color: #000;
+	font-weight: bold;
+}
+sp-title {
+	margin-top: 10px;
+}
+.controls {
+	margin-left: 20px;
+	margin-right: 20px;
+	margin-top: 20px;
+	height: 320px;
+}
+#btn1, #btn2 {
+	margin: 10px;
+}
+.info-p {
+	font-weight: bold;
+	text-align: center;
+}
+.btn_msg {
+	color: #FFF;
+	background-color: #F63;
+}
+.style_h4 {
+	font-weight: bold;
+	font-size: 16px;
+}
+.btn_commom {
+	background: #FF6F3D none repeat scroll 0% 0%;
+	border: 1px solid #FF6F3D;
+	color: #FFF;
+}
+.btn_tip {
+	min-width: 100px;
+	height: 33px;
+	margin: 0px 2px;
+	padding: 0px 10px;
+	line-height: 33px;
+	text-align: center;
+	border-radius: 4px;
+	font-weight: bold;
+	display: inline-block;
+	cursor: pointer;
+	alignment-adjust: central;
+}
+</style>
+<script language="javascript">
+$('#myTabs a').click(function (e) {
+  e.preventDefault()
+  $(this).tab('show');
+})
+ 
+</script>
+</head>
+
+<body>
+<div class="container-fluid content">
+<div class="row theader">
+  <div class="col-lg-6 left"><a href="#"> <img src="小米商城图片/logo.png"></a></div>
+  <div class="col-lg-6 right"> <a href="#" class="a1">退出</a></div>
+</div>
+<!--头像 名字-->
+<div class="n-account-area-box">
+  <div class="n-account-area clearfix">
+    <div class="na-info">
+      <p class="na-name" style="color:#999;font-weight:normal;">请设置名字</p>
+      <p class="na-num">906235113</p>
+    </div>
+    <div class="na-img-area fl-l">
+      <div class="na-img-bg-area"> 
+        <!--
+                    <em class="na-edit" ></em>
+                    --> 
+        
+      </div>
+    </div>
+  </div>
+</div>
+<div class="mainnav">
+
+<!-- Nav tabs -->
+<ul class="nav nav-tabs" role="tablist">
+  <li role="presentation" class="active"> <a href="#safe_con" aria-controls="safe_con" role="tab" data-toggle="tab">账号安全</a> <em class="n-nav-corner"></em> </li>
+  <li role="presentation"><a href="#info_con" aria-controls="info_con" role="tab" data-toggle="tab">个人信息</a></li>
+  <li role="presentation"><a href="#regard_con" aria-controls="regard_con" role="tab" data-toggle="tab">绑定授权</a></li>
+  <li role="presentation"><a href="#serve_con" aria-controls="serve_con" role="tab" data-toggle="tab">小米服务</a></li>
+</ul>
+
+<!-- Tab panes -->
+<div class="tab-content"> 
+  <!--小米服务-->
+  <div role="tabpanel" class="tab-pane" id="serve_con">
+    <div class="container inner-server">
+      <p class="serve_h" style="border-bottom:#CCC solid 1px">您的账号可以登录以下服务 </p>
+      <div class="row box">
+        <div class="col-lg-6">
+          <dl class="box-left">
+            <dt><a href="" target="_blank"><img src="小米商城图片/xm1.png" width="50" height="50" /></a></dt>
+            <dd ><a href="" class="header-text">小米官网</a></dd>
+            <dd class="small-text">小米手机，红米手机，小米平板和小米电视官方正品销售网站</dd>
+          </dl>
+        </div>
+        <div class="col-lg-6">
+          <dl class="box-left">
+            <dt><a href="" target="_blank"><img src="小米商城图片/xm2.png" width="50" height="50" /></a></dt>
+            <dd ><a href="" class="header-text">MIUI</a></dd>
+            <dd class="small-text"> 发烧友必刷的Android ROM</dd>
+          </dl>
+        </div>
+      </div>
+      <div class="row box">
+        <div class="col-lg-6">
+          <dl class="box-left">
+            <dt><a href="" target="_blank"><img src="小米商城图片/xm3.png" width="50" height="50" /></a></dt>
+            <dd ><a href="" class="header-text">云服务</a></dd>
+            <dd class="small-text">随时随地，管理你的所有设备和数据</dd>
+          </dl>
+        </div>
+        <div class="col-lg-6">
+          <dl class="box-left">
+            <dt><a href="" target="_blank"><img src="小米商城图片/xm4.png" width="50" height="50" /></a></dt>
+            <dd ><a href="" class="header-text">米币中心</a></dd>
+            <dd class="small-text"> 轻松安心充值，乐享小米服务</dd>
+          </dl>
+        </div>
+      </div>
+      <div class="row box">
+        <div class="col-lg-6">
+          <dl class="box-left">
+            <dt><a href="" target="_blank"><img src="小米商城图片/xm5.png" width="50" height="50" /></a></dt>
+            <dd ><a href="" class="header-text">应用商店</a></dd>
+            <dd class="small-text">发现最新最热最好玩的应用</dd>
+          </dl>
+        </div>
+        <div class="col-lg-6">
+          <dl class="box-left">
+            <dt><a href="" target="_blank"><img src="小米商城图片/xm6.png" width="50" height="50" /></a></dt>
+            <dd ><a href="" class="header-text">主题商店</a></dd>
+            <dd class="small-text"> 手机百变换装，从此与众不同</dd>
+          </dl>
+        </div>
+      </div>
+      <div class="row">
+        <div class="box">
+          <div class="col-lg-6">
+            <dl class="box-left">
+              <dt><a href="" target="_blank"><img src="小米商城图片/xm7.png" width="50" height="50" /></a></dt>
+              <dd ><a href="" class="header-text">多看阅读</a></dd>
+              <dd class="small-text">海量畅销电子书免费试读，数百万读者阅读首选</dd>
+            </dl>
+          </div>
+          <div class="col-lg-6">
+            <dl class="box-left">
+              <dt><a href="" target="_blank"><img src="小米商城图片/xm8.png" width="50" height="50" /></a></dt>
+              <dd ><a href="" class="header-text">米聊</a></dd>
+              <dd class="small-text"> 轻松社交，米粉乐园</dd>
+            </dl>
+          </div>
+        </div>
+        <div class=" box">
+          <div class="col-lg-6">
+            <dl class="box-left">
+              <dt><a href="" target="_blank"><img src="小米商城图片/xm9.png" width="50" height="50" /></a></dt>
+              <dd ><a href="" class="header-text">小米社区</a></dd>
+              <dd class="small-text">小米手机官方论坛</dd>
+            </dl>
+          </div>
+          <div class="col-lg-6">
+            <dl class="box-left">
+              <dt><a href="" target="_blank"><img src="小米商城图片/xm9.png" width="50" height="50" /></a></dt>
+              <dd ><a href="" class="header-text">小米社区</a></dd>
+              <dd class="small-text">小米手机官方论坛</dd>
+            </dl>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--账号安全-->
+  <div role="tabpanel" class="tab-pane active" id="safe_con">
+    <div class="container inner-con-safe1"> 
+      <!--<h3 class="info_h">安全等级<span><small class="small_info1">50</small><small class="small_info2">分</small></span></h3>-->
+      
+      <h4 class="title-big dis-inb">安全等级</h4>
+      <em class="space6"></em>
+      <p class="font-normal dis-inb wap_colb2"><em class="light-num" style="padding:0"> <span class="score_1">50</span> </em>分</p>
+      <div class="slider-area dis-inb vert-m" style="width:360px;">
+        <div class="slider-bar-bg"></div>
+        <div class="slider-bar-line score_bg_1" style="width:50%;"></div>
+        <em class="drag-ico" style="left:50%"></em> </div>
+      <p class="font-normal dis-inb security_level_txt"> <span class="score_outer_1">存在<em class="light-num">2</em>项风险</span> </p>
+      <hr>
+      <p class="safe_p"><span class="glyphicon glyphicon-lock sp" aria-hidden="true"></span> 账号密码</p>
+      <small class="sm_gray">用于保护帐号信息和登录安全</small> 
+      
+      <!-- Button trigger modal -->
+      <button type="button" class="safe_btn btn-default btn-sm" data-toggle="modal" data-target="#myModal_upt1"> 修改 </button>
+      
+      <!-- Modal -->
+      <div class="modal fade" id="myModal_upt1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+              <h4 class="update-h">修改密码</h4>
+            </div>
+            <div class="modal-body">
+              <div class="controls">
+                <form>
+                  <div class="form-group">
+                    <label for="pwd">原密码</label>
+                    <input type="text" class="form-control" id="pwd" placeholder="输入原密码">
+                  </div>
+                  <div class="form-group">
+                    <label for="pwd">新密码</label>
+                    <input type="password" class="form-control" id="pwd" placeholder="输入新密码">
+                  </div>
+                  <input type="password" class="form-control" id="pwd" placeholder="重复新密码">
+                  <span class="sp-title">密码长度8~16位，其中数字，字母和符号至少包含两种</span>
+                  <div>
+                    <button type="submit" class="btn btn-success" id="btn1">确定</button>
+                    <button type="submit" class="btn btn-default" id="btn2">取消</button>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <hr>
+      <p class="safe_p"> <span class="glyphicon glyphicon-envelope sp" aria-hidden="true"></span> 安全邮箱 <small class="sm_red"> <span class="glyphicon glyphicon-info-sign sp">未绑定</span></small> </p>
+      <small class="sm_red">安全邮箱将可用于登录 </small> 
+      <!-- Button trigger modal -->
+      <button type="button" class="safe_btn btn-default btn-sm" data-toggle="modal" data-target="#myModal_bd"> 绑定 </button>
+      
+      <!-- Modal -->
+      <div class="modal fade" id="myModal_bd" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+              <h4 class="update-h">小米帐号安全验证</h4>
+            </div>
+            <div class="modal-body">
+              <div class="dialog_2">
+                <p class="info-p">为了保护帐号安全，需要验证手机有效性</p>
+                <p style="font-family:Arial, Helvetica, sans-serif">点击发送短信按钮，将会发送一条有验证码的短信至手机</p>
+                <p style="color:#F00">188****003</p>
+                <p align="center">
+                  <button class="btn_msg btn-default" style="alignment-adjust:central">发送短信</button>
+                </p>
+                <p align="center"><a href="" style="font-weight:bold">换用其他方式</a></p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <hr>
+      <p class="safe_p"><span class="glyphicon glyphicon-phone sp" aria-hidden="true"></span> 安全手机 188******94 </p>
+      <small class="sm_gray">安全手机可以用于登录小米帐号，重置密码或其他安全验证</small>
+      <button type="button" class="safe_btn btn-default btn-sm" data-toggle="modal" data-target="#myModal_update2"> 修改 </button>
+      <!-- Modal -->
+      <div class="modal fade" id="myModal_update2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+              <h4 class="update-h">小米帐号安全验证</h4>
+            </div>
+            <div class="modal-body">
+              <div class="dialog_2">
+                <p class="info-p">为了保护帐号安全，需要验证手机有效性</p>
+                <p style="font-family:Arial, Helvetica, sans-serif">点击发送短信按钮，将会发送一条有验证码的短信至手机</p>
+                <p style="color:#F00">188****003</p>
+                <p align="center">
+                  <button class="btn_msg btn-default" style="alignment-adjust:central">发送短信</button>
+                </p>
+                <p align="center"><a href="" style="font-weight:bold">换用其他方式</a></p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <hr>
+      <p class="safe_p"><span class="glyphicon glyphicon-list-alt sp" aria-hidden="true"></span> 密保问题 </p>
+      <small class="sm_red">密保问题用于安全验证，建议立即设置 </small>
+      <button type="button" class="safe_btn btn-default btn-sm" data-toggle="modal" data-target="#myModal_update2"> 设置 </button>
+      <!-- Modal -->
+      <div class="modal fade" id="myModal_update2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+              <h4 class="update-h">小米帐号安全验证</h4>
+            </div>
+            <div class="modal-body">
+              <div class="dialog_2">
+                <p class="info-p">为了保护帐号安全，需要验证手机有效性</p>
+                <p style="font-family:Arial, Helvetica, sans-serif">点击发送短信按钮，将会发送一条有验证码的短信至手机</p>
+                <p style="color:#F00">188****003</p>
+                <p align="center">
+                  <button class="btn_msg btn-default" style="alignment-adjust:central">发送短信</button>
+                </p>
+                <p align="center"><a href="" style="font-weight:bold">换用其他方式</a></p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container inner-con-safe2">
+      <h3>推荐使用</h3>
+      <hr>
+      <p class="safe_p"><img src="小米商城图片/pg5.png"> 小米安全令牌</p>
+      <small class="sm_gray">在非信任设备上登录需要二次验证，防止他人恶意登录 </small> 
+      <!-- Button trigger modal -->
+      <button type="button" class="safe_btn btn-default btn-sm" data-toggle="modal" data-target="#myModal_open"> 开启 </button>
+      
+      <!-- Modal -->
+      <div class="modal fade" id="myModal_open" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+              <h4 class="update-h">开启登录保护</h4>
+            </div>
+            <div class="modal-body">
+              <div>
+                <p align="center"> <img src="小米商城图片/canvas.png"></p>
+              </div>
+              <div class="wapbox">
+                <p class="style_h4" align="center"> 开启登录保护，仅允许信任设备直接登录 </p>
+                <p class="style_h4" align="center"> 非信任设备，登录时需要二次验证 </p>
+              </div>
+              <div class="tip_btns">
+                <p align="center"><a class="btn_tip btn_commom" _href="#popManageTokenDownAct" title="确认开启" href=""> 确认开启 </a></p>
+                <p align="center">注意：开启后，当前处于登录状态的设备需重新登录</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <!--个人信息-->
+  <div role="tabpanel" class="tab-pane" id="info_con">
+    <div class="contain inner-info">
+      <div class="row">
+        <div class="col-md-4">
+          <p class="png"><img src="小米商城图片/picture.png" />
+          <p class="ppset">设置头像</p>
+          </p>
+        </div>
+        <div class="col-md-8">
+          <div class="row">
+            <div class="col-lg-6 info_left">
+              <h4 class="info_line">基础资料 </h4>
+            </div>
+            <div class="col-lg-6 info_right">
+              <button type="button" class="info_btn1" data-toggle="modal" data-target="#myModal" style="float:right"> 编辑 </button>
+              <a href=""> <span class="glyphicon glyphicon-pencil info_pen" style="float:right"></span></a> </div>
+          </div>
+          <hr class="hr" style="border-bottom:#999 solid 1px">
+          <p style="border-bottom:#999 solid 1px" class="info">姓名：请设置名字</p>
+          <p style="border-bottom:#999 solid 1px" class="info">生日：</p>
+          <p style="border-bottom:#999 solid 1px" class="info">性别：</p>
+          <h4 style="border-bottom:#999 solid 1px" class="info_line">高级设置</h4>
+          <p style="border-bottom:#999 solid 1px" class="info">银行卡<span>
+            <button type="button" class="info_btn" data-toggle="modal" data-target="#myModal"> 管理 </button>
+            </span> </p>
+          <p class="info" style="border-bottom:#999 solid 1px">账号地区：中国<span>
+            <button type="button" class="info_btn" data-toggle="modal" data-target="#myModal">修改 </button>
+            </span> </p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Modal -->
+  <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+          <h4 class="modal-title" id="myModalLabel" style="font-weight:bold">编辑基础资料</h4>
+        </div>
+        <div class="modal-body">
+          <form>
+            <div class="control-inline">
+              <label for="name">姓名：</label>
+              <input id="name" type="text"  placeholder="姓名" size="25" style="border-radius:5px">
+            </div>
+            <div class="form-inline">
+              <label for="birth" clsss="control-label">生日：</label>
+              <select id="year">
+                <option>2015</option>
+                <option>2014</option>
+                <option>2013</option>
+                <option>2012</option>
+                <option>2011</option>
+                <option>2010</option>
+                <option>2000</option>
+                <option>1999</option>
+                <option>1998</option>
+                <option>1997</option>
+                <option>1996</option>
+                <option>1995</option>
+                <option>1994</option>
+                <option>1993</option>
+                <option>1992</option>
+                <option>1991</option>
+                <option>1990</option>
+              </select>
+              <select id="month">
+                <option>01</option>
+                <option>02</option>
+                <option>03</option>
+                <option>04</option>
+                <option>05</option>
+                <option>06</option>
+                <option>07</option>
+                <option>08</option>
+                <option>09</option>
+                <option>10</option>
+                <option>11</option>
+                <option>12</option>
+              </select>
+              <select id="day" >
+                <option>01</option>
+                <option>02</option>
+                <option>03</option>
+                <option>04</option>
+                <option>05</option>
+                <option>06</option>
+                <option>07</option>
+                <option>08</option>
+                <option>09</option>
+                <option>10</option>
+                <option>11</option>
+                <option>12</option>
+                <option>13</option>
+                <option>14</option>
+                <option>15</option>
+                <option>16</option>
+                <option>17</option>
+                <option>18</option>
+                <option>19</option>
+                <option>20</option>
+                <option>21</option>
+                <option>22</option>
+                <option>23</option>
+                <option>24</option>
+                <option>25</option>
+                <option>26</option>
+                <option>27</option>
+                <option>28</option>
+                <option>29</option>
+                <option>30</option>
+                <option>31</option>
+              </select>
+            </div>
+            <div class="form-inline">
+              <label for="sex">性别：</label>
+              <label class="form-inline">
+                <input type="radio" name="sex" value="1" checked>
+                男 </label>
+              <label class="form-inline">
+                <input type="radio" name="sex" value="2">
+                女 </label>
+            </div>
+          </form>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal" style="margin:10px">Close</button>
+          <button type="button" class="btn btn-primary" style="margin:10px">Save changes</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <!--授权绑定-->
+  
+  <div role="tabpanel" class="tab-pane" id="regard_con">
+    <div class="container regard-inner-con">
+      <h4 class="regard_h">绑定<small> <span class="title_item">小米帐号绑定的第三方帐号，可用于直接登录小米网等网站</span></small></h4>
+      <hr>
+      <div class="row">
+        <div class="col-lg-4">
+          <div class="box">
+            <dl class="box-left">
+              <dt><a href="" target="_blank"><img src="小米商城图片/wb.png" width="70" height="70" /></a></dt>
+              <dd><a href="" class="reg-header">新浪微博</a></dd>
+              <dd><span class="glyphicon glyphicon-info-sign sp_reg"><small>未绑定</small></span></dd>
+              <dd class="btn_reg">
+                <button class="btn_reg btn-default btn-xs" type="submit">添加绑定</button>
+              </dd>
+            </dl>
+          </div>
+        </div>
+        <div class="col-lg-4">
+          <div class="box">
+            <dl class="box-left">
+              <dt><a href="" target="_blank"><img src="小米商城图片/qq.png" width="70" height="70" /></a></dt>
+              <dd><a href="" class="reg-header">QQ</a></dd>
+              <dd><span class="glyphicon glyphicon-info-sign sp_reg"><small>未绑定</small></span></dd>
+              <dd class="btn_reg">
+                <button class="btn_reg btn-default btn-xs" type="submit">添加绑定</button>
+              </dd>
+            </dl>
+          </div>
+        </div>
+        <div class="row box">
+          <div class="col-lg-4">
+            <dl class="box-left">
+              <dt><a href="" target="_blank"><img src="小米商城图片/baidu.png" width="70" height="70" /></a></dt>
+              <dd><a href="" class="reg-header">百度账号</a></dd>
+              <dd><span class="glyphicon glyphicon-info-sign sp_reg"><small>未绑定</small></span></dd>
+              <dd class="btn_reg">
+                <button class="btn_reg btn-default btn-xs" type="submit">添加绑定</button>
+              </dd>
+            </dl>
+          </div>
+        </div>
+        <h4 class="regard_h">授权<small> <span class="title_item">您已经授权以下应用访问您的部分帐号信息</span></small></h4>
+        <hr>
+        <div>
+          <p class="regard_bot">暂未授权任何应用访问您的帐号信息</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="footer" style="margin-top:60px">
+    <div class="faq_link" align="center"><a class="a_critical" href="#" target="_blank"><em></em>常见问题</a></div>
+    <p style="text-align:center"><span>小米公司版权所有-京ICP备10046444-京公网安备1101080212535</span></p>
+    <div class="nf-link-area clearfix" align="center">
+      <p style="text-align:center">简体|繁体|English</p>
+    </div>
+  </div>
+</div>
+</body>
+</html>

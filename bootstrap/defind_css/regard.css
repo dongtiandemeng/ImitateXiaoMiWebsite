@@ -1,0 +1,42 @@
+@charset "utf-8";
+/* CSS Document */
+#regard_con{
+	width:950px;
+	height:auto;
+	 
+	} 
+.sp_reg{
+	color:#F60;}
+.reg-header{
+color:#000;
+font-weight:bold;}
+.reg-header:hover{
+	text-decoration:none;
+}
+.regard-inner-con{
+	width:950px;
+	 
+	background-color:#FFF;
+	border-radius:10px;
+	}
+.regard_p {
+	height: 80px;
+	padding-left: 10px;
+	text-align: left;
+	margin-top: -10px;
+	left: -10px;
+}
+.regard_bot{
+	text-align:center;
+	font-size:14px;
+	color:#999;
+	margin-top:60px;
+	 
+	
+	}
+.redgard_img{
+	margin-top:40px;
+	}
+.regard_h{
+	margin-top:40px;
+	font-weight:bold;}

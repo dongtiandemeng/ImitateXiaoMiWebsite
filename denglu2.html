@@ -1,0 +1,76 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="utf-8">
+<title>denglu</title>
+<link href="css/bootstrap.min.css" rel="stylesheet" type="text/css">
+<meta name="viewport" content="width=devic-wdith,initial-scale=1.0">
+<style>
+.h1 {font-weight:bolder; font-size:26px; text-align:center; margin-top:30px;}
+
+.f { text-align:center;}
+.f1 {background:#fff; width:320px;  height:50px; padding:12px 10px; border:1px solid #e6e6e6; color:#333; font-size:14px; font-weight:bold; -webkit-appearance: none; outline:none;}
+.f2 {border-radius:6px 6px 0 0; border-top-left-radius:6px; border-top-right-radius:6px; border-bottom-right-radius:0px; border-bottom-left-radius:0px;}
+.f3 { border-radius: 0 0 6px 6px; margin-top: -1px; _margin-top: -3px; }
+.f4 {outline:none;}
+.f5 {width: 320px;  font-size: 16px; outline:none;  position: relative;}
+
+.f6 {margin:15px;}
+.f7 {color:#999; position:relative; text-align:right; padding-right:405px; font-size:12px;}
+.f7 a{ color: #999;}
+.f7 a:hover {color:#FF9900; text-decoration: none;}
+.f8 {cursor:pointer; background:#fff; border:1px solid #e5e5e5; border-radius:6px; color:#7c7c7c; display:inline-block; font-size:16px; height:44px; line-height:44px; text-align:center; width:320px;  appearance:none; outline:none;}
+.f8 a {color:#CCC; }
+.f8:hover {color:#333333; text-decoration:none;}
+
+.x{text-align: center; padding-bottom: 10px; padding-top:100px; }
+.x2 {margin-bottom: 10px; font-size:12px;}
+.x2 a{display: inline-block; color: #919191; padding: 0 6px; line-height: 1.2;}
+.x3 {color:#333; font-weight: bold;}
+.x3:hover {color:#333; text-decoration:none;}
+.x4:hover {color:#333; text-decoration:none; font-weight:bold;}
+
+.q{color:#999; font-size:12px; margin-bottom:10px;}
+</style>
+</head>
+
+<body>
+<div class="container">
+    <h1 class="h1">
+    <span >一个帐号，玩转所有小米服务！</span>
+    </h1> 
+    <div class="f">
+       <div class="f  show">
+       <form method="post" class="form-group" action=""  onsubmit="return MiniLogin.validateForm();">
+       <div  id="shake_area" style="z-index:30;">
+          <div class="display-custom-hide" id="revalidate_user"> 
+            <p ></p>
+           </div>
+       <div><input type="text" align="middle" class="f1 f2"  autocomplete="off" placeholder="邮箱/手机号码/小米帐号"> </div>
+       
+       <div><input type="password" class="f1 f3"  autocomplete="off" data-rule placeholder="密码"></div>
+       </div>
+       <div class="f6"><button type="button" class="btn btn-success f5" >立即登录</button></div>
+       
+       <div class="f7">
+       <div class="row" id="slider">
+       <a href="" id="message_FORGET_PASSWORD" target="_blank">忘记密码？</a>
+       </div>
+       </div>
+       <div class="f6"><a class=" f8" href="#" role="button">注册小米帐号</a></div>
+       </form>
+       <div class="x"> 
+       <div class="x2">
+                                               
+       <a href="#" onclick="change_lang('x3'); return false;" class="x3">简体</a>| 
+       <a href="#" onclick="change_lang('x3'); return false;" class="x4">繁体</a>| 
+       <a href="#S" onclick="change_lang('x3'); return false;" class="x4">English</a>
+       </div> 
+       </div>
+       <p class="q" id="message_COPYRIGHT">小米公司版权所有-京ICP备10046444-京公网安备1101080212535</p> 
+</div>
+
+<script type="text/javascript" src="js/bootstrap.min.js"></script>
+<script type="text/javascript" src="js/jquery-1.11.3.min.js"></script>
+</body>
+</html>
